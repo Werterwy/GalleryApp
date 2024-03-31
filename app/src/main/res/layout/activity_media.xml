@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaActivity">
+
+    <SurfaceView
+        android:id="@+id/mediaSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/mediaControlLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mediaControlLayout"
+        android:layout_width="399dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/mediaPathEditText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter media path"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/bStart"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStart"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/bPause"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPause"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/bResume"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickResume"
+            android:text="Resume" />
+
+        <Button
+            android:id="@+id/bStop"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStop"
+            android:text="Stop" />
+
+        <CheckBox
+            android:id="@+id/loopCheckBox"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:text="Loop Playback" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

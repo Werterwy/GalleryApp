@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab11</string>
+    <string name="camera_description" />
+    <string name="gallery_description" />
+    <string name="music_description" />
+    <string name="capture_button_description">Capture Photo</string>
+</resources>
