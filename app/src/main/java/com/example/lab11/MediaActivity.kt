@@ -102,6 +102,7 @@ class MediaActivity : AppCompatActivity() {
         mediaPlayer?.stop()
     }
 
+
     override fun onDestroy() {
         super.onDestroy()
         mediaPlayer?.release()
